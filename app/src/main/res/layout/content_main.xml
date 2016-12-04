@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nanodegree.udacity.sandclan.com.br.appportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_screen_title_margin_top"
+                android:text="@string/main_screen_title"
+                android:textSize="@dimen/main_screen_title"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_popular_movies"
+                android:layout_width="@dimen/main_screen_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_screen_button_pop_movies_margin_top"
+                android:background="@color/buttonBackground"
+                android:onClick="buttonClick"
+                android:tag="@string/popular_movies"
+                android:text="@string/popular_movies" />
+
+            <Button
+                android:id="@+id/btn_stock_hawk"
+                android:layout_width="@dimen/main_screen_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_screen_button_margin_top"
+                android:background="@color/buttonBackground"
+                android:onClick="buttonClick"
+                android:tag="@string/stock_hawk"
+                android:text="@string/stock_hawk" />
+
+            <Button
+                android:id="@+id/btn_build_it_bigger"
+                android:layout_width="@dimen/main_screen_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_screen_button_margin_top"
+                android:background="@color/buttonBackground"
+                android:onClick="buttonClick"
+                android:tag="@string/build_it_bigger"
+                android:text="@string/build_it_bigger" />
+
+            <Button
+                android:id="@+id/btn_make_your_app_material"
+                android:layout_width="@dimen/main_screen_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_screen_button_margin_top"
+                android:background="@color/buttonBackground"
+                android:onClick="buttonClick"
+                android:tag="@string/make_your_app_material"
+                android:text="@string/make_your_app_material" />
+
+            <Button
+                android:id="@+id/btn_go_ubiquitous"
+                android:layout_width="@dimen/main_screen_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_screen_button_margin_top"
+                android:background="@color/buttonBackground"
+                android:onClick="buttonClick"
+                android:tag="@string/go_ubiquitous"
+                android:text="@string/go_ubiquitous" />
+
+            <Button
+                android:id="@+id/btn_my_own_app"
+                android:layout_width="@dimen/main_screen_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/main_screen_button_margin_top"
+                android:background="@color/buttonBackground"
+                android:onClick="buttonClick"
+                android:tag="@string/capstone_my_own_app"
+                android:text="@string/capstone_my_own_app" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
